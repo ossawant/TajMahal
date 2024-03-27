@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,4 +48,55 @@
     
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="formscript.css"/>
+</head>
+<body>
+    
+        
+    <div class="container">
+        <div class="image-container">
+            <img src="images/Lovepik_com-400329465-the-taj-mahal.png"/>
+        </div>
+        
+        <div class="form-container">
+            <form id="bookingForm">
+                <h2>Ticket Booking</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="date">Date of Visit:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="adults">Number of Adults:</label>
+                <input type="number" id="adults" name="adults" min="1" required>
+    
+                <label for="children">Number of Children:</label>
+                <input type="number" id="children" name="children" min="0" required>
+    
+                <label for="ticketType">Ticket Type:</label>
+                <select id="ticketType" name="ticketType" required>
+                    <option value="regular">Regular</option>
+                    <option value="student">Student</option>
+                    <option value="foreigner">Foreigner</option>
+                </select>
+    
+                <input type="submit" value="Book Ticket">
+            </form>
+        </div>
+
+    </div>
+    
+
+</body>
+>>>>>>> b8d3147081f9274b5a24cd01d40a5665a52461df
 </html>
