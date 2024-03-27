@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*
+{
+    font-family:"Merriweather", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem ;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+    &::-webkit-scrollbar-track{
+        background: white;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: black;
+    }
+}
+
+section{
+ padding: 5rem 9%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    color: black;
+    border: 2rem solid black;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3 rem;
+
+    &:hover{
+        background: black;
+        color: white;
+    }
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: black;
+}
+
+.header
+{
+    position: fixed;
+    top:0;left:0;right:0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+
+    &.active{
+        background: rgba(64, 64, 64, 0.9);
+        box-shadow: 0.5rem 1rem  rgba(0, 0, 0, .1);
+    }
+
+.logo
+{
+    margin-right: auto;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    font-weight: bolder;
+
+   
+    
+
+   
+
+}
+
+.navbar{
+
+    a{
+        margin-left: 2rem;
+        font-size: 1.7rem;
+        color: white;
+        
+
+        &:hover{
+            color: grey;
+            
+        }
+    }
+}
+.icons a,.icons div{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: white;
+
+    &:hover{
+        color: grey;
+    }
+
+}
+
+#menu-btn{
+    display: none;
+
+}
+}
+.search-form
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    transform: translateY(-110%);
+
+    &.active{
+        transform: translateY(0%); 
+    }
+
+    #close-search{
+        position: absolute;
+        top:1.5rem;
+        right: 2.5rem;
+        cursor: pointer;
+        color:white;
+        font-size: 6rem;
+
+        &:hover{
+            color: grey;
+        }
+    }
+
+ form{
+    width: 70rem;
+    margin: 0.2rem;
+    padding-bottom: 2rem;
+    border-bottom: .2rem solid white;
+    display: flex;
+    align-items: center;
+
+    input{
+       width: 100%;
+       font-size: 2rem;
+       color: white;
+       text-transform: none; 
+       background: none;
+       padding-right: 2rem;
+
+       &::placeholder{
+        color: #aaa;
+       }
+    }
+
+    label{
+        font-size:3rem ;
+        cursor: pointer;
+        color: white;
+
+
+        &:hover{
+            color: grey;
+        }
+    }
+ }   
+}
+
+.home{
+    padding: 0;
+
+    .box{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-size: cover !important;
+        background-position: center !important;
+        justify-content: flex-end;
+        padding: 2rem 9%;
+        
+
+        &.second{
+            justify-content: flex-start;
+            
+        }
+
+        .content{
+            width: 50rem;
+
+            span{
+                font-size: 4rem;
+                color: black;
+            }
+
+            h3{
+               font-size: 6rem;
+               color: green;
+               padding-top:.5rem;
+               text-transform: uppercase; 
+            }
+
+            p{
+                line-height: 2;
+                color: black;
+                font-size: 1.5rem;
+                padding: 1rem 0;
+            }
+        }
+
+    }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 3rem;
+    color: grey;
+
+}
+.category{
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(29rem,1fr));
+        gap:1.5rem;
+
+        .box{
+            text-align: center;
+            padding: 1rem;
+
+
+            img{
+                height: 20rem;
+                width: 20rem;
+                border-radius: 50%;
+                margin-bottom: 1 rem;
+            }
+            h3{
+                font-size: 2rem;
+                color: green;
+            }
+            p{
+                font-size: 1.6rem;
+                color: black;
+                padding: 1rem 0;
+                line-height: 2;
+            }
+        }
+    }
+}
+/* Your CSS styles go here for about us */
+
+.about-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-us h2 {
+    color: #333;
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 2px; /* Increased letter spacing */
+    line-height: 1.5; /* Increased line height */
+}
+
+.about-us h3 {
+    color: #444;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 1px; /* Increased letter spacing */
+}
+
+.about-us p {
+    color: #666;
+    font-size: 1.4em;
+    line-height: 1.8;
+    letter-spacing: 1px; /* Increased letter spacing */
+}
+
+/* Ancient styling */
+.about-us .container {
+    border: 2px solid #d2b48c;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #f5deb3;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+.about-us h3 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    text-transform: uppercase;
+}
+
+.about-us p {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+.shahjahan{
+    position: absolute;
+    
+    transform: translateY(-800px) scaleX(-1);
+    height: 400px;  
+    margin-left: 80px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    
+}
+
+
+.taj{
+    height: 350px;
+    margin-left: -620px;
+    width: 480px;
+    margin-bottom: -60px;
+    margin-top: -40px;
+    
+   
+}
+
+.timing
+{   display: flex;
+    background-color: #f5deb3;
+    width: 1000px;
+    margin-left: 500px;
+    align-items: center;
+
+}
+.timing .time
+{   flex: 1;
+    overflow: hidden;
+   
+   
+}
+
+.time h2{
+  align-items: center;
+  justify-content: center;
+  margin-left: 45%;
+  font-size: x-large;
+  padding-bottom: 220px;
+
+  
+}
+
+
+
+
+
+  
+
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries uncomment nav close from html then work on it 
+@media (max-width:1200px) {
+
+    .header{
+        padding: 2rem;
+
+    }
+    
+}
+@media (max-width:1200px) */
