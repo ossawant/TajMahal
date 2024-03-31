@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do's and Don'ts</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5deb3;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            color: #333;
+        }
+        h1,span {
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+            border: black;
+            border: 0 solid transparent; /* Initially, set border to transparent */
+            transition: border 0.3s ease;
+            padding: 10px; /* Added padding for better appearance */
+            border-radius: 5px; /* Added border radius for rounded corners */
+            cursor: pointer;
+            color: black; /* Default text color */
+            transition: color 0.3s ease;
+        }
+        span:hover {
+         border: 1px solid black; /* Set border on hover */
+         color: green; /* Text color changes to red on hover */
+        cursor: pointer;
+        }
+        h1:hover{
+            border: 1px solid black; /* Set border on hover */
+          color: green; /* Text color changes to red on hover */
+         cursor: pointer;
+        }
+        .span2:hover{
+            border: 1px solid black; /* Set border on hover */
+         color: red; /* Text color changes to red on hover */
+        cursor: pointer;
+        }
+        
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-left: 20px;
+            padding-left: 20px;
+            list-style: none;
+        }
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            animation: fadeIn 0.5s ease both;
+        }
+        li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .dos li::before {
+            background-color: #008000; /* Green */
+        }
+        .donts li::before {
+            background-color: #FF0000; /* Red */
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Do's and Don'ts</h1>
+        
+        <div class="dos">
+            <h2><span>Do's</span></h2>
+            <ul>
+                <li>Respect the historical significance of the Taj Mahal.</li>
+                <li>Take care of your belongings and avoid littering.</li>
+                <li>Follow the instructions provided by guides and authorities.</li>
+                <li>Take photographs responsibly, without causing inconvenience to others.</li>
+                <li>Enjoy the beauty of the monument and its surroundings.</li>
+            </ul>
+        </div>
+        
+        <div class="donts">
+            <h2><span class="span2">Don'ts</span></h2>
+            <ul>
+                <li>Don't touch or deface the monument or its surroundings.</li>
+                <li>Don't carry prohibited items inside the premises.</li>
+                <li>Avoid creating noise or disturbances that may disrupt others' experience.</li>
+                <li>Don't indulge in any form of vandalism or disrespectful behavior.</li>
+                <li>Don't climb on the walls or structures.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
