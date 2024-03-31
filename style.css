@@ -338,6 +338,10 @@ section{
     width: 480px;
     margin-bottom: -60px;
     margin-top: -40px;
+    &:hover{
+        transform: scale(1.04);
+        
+    }
     
    
 }
