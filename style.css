@@ -38,7 +38,7 @@ section{
     margin-top: 1rem;
     display: inline-block;
     color: black;
-    border: 2rem solid black;
+    border: .2rem solid black;
     cursor: pointer;
     background: none;
     font-size: 1.7rem;
@@ -366,6 +366,8 @@ section{
 
   
 }
+
+
 
 
 
