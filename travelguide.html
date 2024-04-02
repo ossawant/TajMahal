@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            margin-bottom: 100px;
+
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #f5deb3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+
+            
+        }
+
+        .card1,.card2 {
+            background-color: rgba(31, 29, 29, 0.4);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            width: 300px;
+            padding: 20px;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover
+        {
+            transform: scale(1.04);
+        }
+        }
+
+        
+       
+        img{
+            height: 100px;
+            margin-bottom: 5px;
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <h1>Travel Guides</h1>
+    <div class="container">
+        
+        <div class="card1">
+            <img src="images/man.png"/>
+            <h3>Name: Suresh Patwardhan</h3>
+            <h3>Contact Details: 8989889978</h3>
+
+            
+        </div>
+        <div class="card2">
+            <img src="images/man.png"/>
+            <h3>Name: Rajesh Ghumo</h3>
+            <h3>Contact Details: 8948519978</h3>
+        </div>
+    </div>
+</body>
+</html>
