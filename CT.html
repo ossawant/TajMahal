@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Headings Table</title>
+     <!-- Ensure correct path -->
+</head>
+<body>
+   
+    <div class="table-wrapper">
+        <h2>Ticket Confirmation</h2>
+
+        
+        <table>
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>johndoe@example.com</td>
+                </tr>
+                <tr>
+                    <th>Date of Visit</th>
+                    <td>2024-04-15</td>
+                </tr>
+                <tr>
+                    <th>Number of Adults</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>Number of Children</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Ticket Type</th>
+                    <td>General</td>
+                </tr>
+                <tr>
+                    <th>Amount</th>
+                    <td>$45.00</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+    <div class="buttons">
+        <button>Edit</button>
+        <button>Pay</button>
+    </div>
+</body>
+</html>
+
+<style>
+ body {
+    font-family: 'Merriweather', serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjusted to 'auto' for flexibility with the increased table size */
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    background-color:#f5deb3 ;
+}
+.table-wrapper h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+}
+
+
+
+.table-wrapper {
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 45%; /* Increased width of the table wrapper for a larger table */
+    max-width: 1200px; /* You can adjust this value to set a maximum width */
+    margin-right: 120px;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Ensures the table expands to fill its container */
+    overflow: hidden;
+}
+
+th, td {
+    text-align: left;
+    padding: 20px; /* Increased padding for taller rows */
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+
+   
+}
+
+tr:nth-child(even) td {
+    background-color: white;
+}
+tr:nth-child(odd) td {
+    background-color: white;
+}
+.buttons{
+ display: flex;
+ gap: 20px;
+ margin-top: 650px;
+ margin-left: -400px;
+
+ 
+ 
+}
+
+.buttons button {
+    padding: 12px 50px;
+    border-radius: 5px;
+    background-color:rgb(106, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.buttons button:hover {
+    background-color:black;
+}
+
+
+
+
+
+
+
+</style>
