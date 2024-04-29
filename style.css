@@ -321,12 +321,26 @@ section{
     font-family: 'Georgia', serif;
     font-style: italic;
 }
-.shahjahan{
+
+/* But mumtaz ka image hai */
+.shahjahan{ 
     position: absolute;
     
     transform: translateY(-800px) scaleX(-1);
     height: 400px;  
     margin-left: 80px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+   
+    
+}
+
+/* But shahajan ka image hai */
+.mumtaz{
+    position: absolute;
+    
+    transform: translateY(-800px) ;
+    height: 380px;  
+    margin-left: 1200px;
     transition: transform 0.5s ease, opacity 0.5s ease;
     
 }
